@@ -11,10 +11,6 @@ const Home = () => {
         <Carousel />
         <Sections />
         <Ca/>
-        {/* <Card />
-        <Card /> */}
-    
-
     </div>
   )
 }
