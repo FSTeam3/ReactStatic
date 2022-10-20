@@ -12,9 +12,13 @@ function App() {
       <Home />
       <Footers />
       <br/>
+      <br/>
+      <br/>
       <Header />
       <About_us/>
       <Footers />
+      <br/>
+      <br/>
       <br/>
       <Header />
       <Forms/>

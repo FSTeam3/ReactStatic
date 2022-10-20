@@ -2,7 +2,7 @@ import React from 'react'
 
 const Forms = () => {
   return (
-    <div className='col-md-8 mx-auto'><div className="mb-3">
+    <div className='col-md-8 mx-auto mt-5'><div className="mb-3">
     <label for="fname" className="form-label">First Name</label>
     <input type="text" className="form-control" id="fname" placeholder="Enter First Name Here"/>
   </div>
