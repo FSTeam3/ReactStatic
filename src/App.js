@@ -4,11 +4,12 @@ import Header from '../src/compo/Header';
 import Footers from './compo/Footers';
 import About_us from './Pages/About_us';
 import Forms from './compo/Forms';
-
+import Pricing from './compo/Pricing';
 function App() {
   return (
   <div>
-
+    <Pricing />
+    <br/>
       <Header />
       <Home />
       <Footers />
