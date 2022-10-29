@@ -3,7 +3,7 @@ import Pricing_data from '../datas/Pricing_data'
 
 const Pricing = () => {
   return (
-    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="row row-cols-1 row-cols-md-3 mb-3 my-3 text-center">
       {Pricing_data.map((data) => {
         return <div class="col">
         <div class="card mb-4 rounded-3 shadow-sm">
