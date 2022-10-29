@@ -26,10 +26,10 @@ function Header() {
           <a className="nav-link active text-light" aria-current="page" href="#">Home</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light" href="#">About Us</a>
+          <a className="nav-link text-light" href="../Pages/About_us.js">About Us</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link text-light" href="#">Pricing</a>
+          <a className="nav-link text-light" href="../Pages/Pricing.js">Pricing</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
