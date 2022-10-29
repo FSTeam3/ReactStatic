@@ -8,6 +8,7 @@ import Forms from './compo/Forms';
 function App() {
   return (
   <div>
+
       <Header />
       <Home />
       <Footers />
