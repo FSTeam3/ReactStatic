@@ -5,37 +5,48 @@ import Footers from './compo/Footers';
 import About_us from './Pages/About_us';
 import Forms from './compo/Forms';
 import Pricing from './Pages/Pricing';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
-  <div>
-    
-    <br/>
-      <Header />
-      <Home />
-      <Footers />
-      <br/>
-      <br/>
-      <br/>
-      <Header />
-      <About_us/>
-      <Footers />
-      <br/>
-      <br/>
-      <br/>
-      <Header />
-      <Forms/>
-      <Footers />
-      <br/>
-      <br/>
-      <br/>
-      <Header />
-      <Pricing />
-      <Footers />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<><Header /> <Home /> <Footers /> </>}/>
+          <Route path="about_us" element={<><Header /><About_us />  <Footers /> </>} />
+          <Route path="pricing" element={<><Header /> <Pricing /> <Footers /> </>} />
+          <Route path="forms" element={<><Header /> <Forms /> <Footers /> </>} />
+        
+      </Routes>
+    </BrowserRouter>
+    // <div>
+    // <br/>
+    //   <Header />
+    //   <Home />
+    //   <Footers />
+    //   <br/>
+    //   <br/>
+    //   <br/>
+    //   <Header />
+    //   <About_us/>
+    //   <Footers />
+    //   <br/>
+    //   <br/>
+    //   <br/>
+    //   <Header />
+    //   <Forms/>
+    //   <Footers />
+    //   <br/>
+    //   <br/>
+    //   <br/>
+    //   <Header />
+    //   <Pricing />
+    //   <Footers />
 
 
 
 
-    </div>)
+    // </div>
+  )
 }
 
 export default App;

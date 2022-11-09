@@ -1,5 +1,6 @@
 import React from 'react'
 import Card_data from '../datas/Card_data'
+import { Outlet, Link } from "react-router-dom";
 const Ca = () => {
   return (
     <div class="container">
@@ -13,7 +14,7 @@ const Ca = () => {
                 <p class="card-text">{data.p}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">{data.btn1}</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary"><Link to="/forms">{data.btn1}</Link></button>
                     <button type="button" class="btn btn-sm btn-outline-secondary">{data.btn2}</button>
                   </div>
                   <small class="text-muted">{data.min}</small>
@@ -23,6 +24,7 @@ const Ca = () => {
           </div>
         })}
       </div>
+      <Outlet/>
     </div>
 
   )
