@@ -8,18 +8,18 @@ const Footers = () => {
             <div className='row  text-center'>
                 <div className='col-md-6'>
                     <div className='text-light'>
-                        <p>a</p>
-                        <p>a</p>
-                        <p>a</p>
-                        <p>a</p>
+                        <p>Vehicle</p>
+                        <p>Vehicle</p>
+                        <p>Vehicle</p>
+                        <p>Vehicle</p>
                     </div>
                 </div>
                 <div className='col-md-6'>
                 <div className='text-light'>
-                <p>a</p>
-                        <p>a</p>
-                        <p>a</p>
-                        <p>a</p>
+                <p>Vehicle</p>
+                        <p>Vehicle</p>
+                        <p>Vehicle</p>
+                        <p>Vehicle</p>
                     </div>
                 </div>
             </div>
