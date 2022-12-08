@@ -1,57 +1,57 @@
 const Card_Data = [
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "a",
-        btn1 : "a",
+        btn1 : "Get Quote",
         btn2 : "a",
-        min : "a"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
     {
         p : "This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
-        btn1 : "View",
+        btn1 : "Get Quote",
         btn2 : "Edit",
-        min : "9mins"
+        min : "time"
     },
 
 ]

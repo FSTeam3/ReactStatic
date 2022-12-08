@@ -15,9 +15,9 @@ function Header() {
                 </div>
             </nav> */}
 
-<nav className="navbar navbar-expand-lg bg-dark">
+<nav className="navbar navbar-expand-lg bg-dark rounded-bottom">
   <div className="container-fluid">
-    <Link className="navbar-brand text-light" to="/">Navbar</Link>
+    <Link className="navbar-brand text-light font-weight-bold mx-3" to="/">Autowa.</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -32,7 +32,7 @@ function Header() {
         <li className="nav-item">
           <Link className="nav-link text-light" to="/pricing">Pricing</Link>
         </li>
-        <li className="nav-item dropdown">
+        {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Vehicle Category
           </a>
@@ -42,7 +42,7 @@ function Header() {
             <li><a className="dropdown-item text-light" href="#">Truck</a></li>
             <li><a className="dropdown-item text-light" href="#">Bus</a></li>
           </ul>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
