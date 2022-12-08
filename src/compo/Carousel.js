@@ -4,7 +4,7 @@ import car from './Insurance_Car.jpg'
 
 const Carousel = () => {
     return (
-        <div className='container'>
+        <div className='container mt-1'>
         <div id="carouselExampleControls" className="carousel slide h-25" data-bs-ride="carousel">
             <div className="carousel-inner h-50">
                 <div className="carousel-item active">
