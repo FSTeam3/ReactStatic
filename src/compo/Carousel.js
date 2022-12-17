@@ -1,5 +1,5 @@
 import React from 'react'
-import car from './Insurance_Car.jpg'
+import car from '../compo/img/pic.jpg'
 
 
 const Carousel = () => {

@@ -7,10 +7,10 @@ const Sections = () => {
     <div className="row py-lg-5">
       <div className="col-lg-6 col-md-8 mx-auto">
         <h1 className="fw-light">About Us</h1>
-        <p className="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+        <p className="lead text-muted">
+        When you buy insurance from us, you get more than just financial safety. You also get: our promise of simplifying complex insurance terms and conditions, quick stress-free claims, instant quotes from top insurers and being present for you in the toughest of times.</p>
         <p>
           <a href="#" className="btn btn-primary my-2 mx-2 text-light"><Link className="text-light" to="/About_us">Contact Us</Link></a>
-          <a href="#" className="btn btn-secondary my-2">Location</a>
         </p>
       </div>
     </div>

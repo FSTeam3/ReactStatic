@@ -1,7 +1,12 @@
 import React from 'react'
 import Pricing_data from '../datas/Pricing_data'
+import toast from 'react-simple-toasts';
+// toast.configure()
 
 const Pricing = () => {
+  // const notify = ()=>{toast('Thank You For Your Interest, We Will Get Back To you!');}
+    
+
   return (
     <div class="row row-cols-1 row-cols-md-3 mb-3 my-3 text-center">
       {Pricing_data.map((data) => {
@@ -15,7 +20,7 @@ const Pricing = () => {
             <ul class="list-unstyled mt-3 mb-4">
               <li>Help center access</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary">{data.btn}</button>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" onClick={() => toast('Thank You For Your Interest, We Will Get Back To you!')}>{data.btn}</button>
           </div>
         </div>
       </div>
