@@ -64,10 +64,24 @@ function Form() {
     // console.log(proceed);
   }
 
+  const isValidMobileNumber = (e) => {
+    if(number.length == 10 ){
+      return true;
+    }else{
+      return false;
+    }
+  }
   const checkSubmitButtom = () =>{
     if (firstName && lastName && number && rcno && email) {
       // console.log("First Name: ", firstName, "\nLast Name: ", lastName)
-      isProceed(true);
+      const checkMobileNum = isValidMobileNumber();
+      if(checkMobileNum){
+        isProceed(true);
+      }else{
+        isProceed(false);
+        setError(true)
+      }
+      
     }
   }
   return (
