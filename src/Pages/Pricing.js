@@ -20,7 +20,7 @@ const Pricing = () => {
           <div class="card-body">
             <h1 class="card-title pricing-card-title">{data.price}<small class="text-muted fw-light">/{data.year}</small></h1>
             <ul class="list-unstyled mt-3 mb-4">
-              <li>Help center access</li>
+              <li>Terms & Conditions Apply</li>
             </ul>
             <button type="button" class="w-100 btn btn-lg btn-outline-primary" onClick={() => toast('Thank You For Your Interest, We Will Get Back To you!', {
         position: toast.POSITION.TOP_CENTER

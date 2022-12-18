@@ -72,8 +72,8 @@ function Form() {
     }
   }
   const checkSubmitButtom = () =>{
-    if (firstName && lastName && number && rcno && email) {
-      // console.log("First Name: ", firstName, "\nLast Name: ", lastName)
+    if (firstName.length>0 && lastName.length>0 && number && rcno.length>0 && email.length>0) {
+      console.log("First Name: ", firstName, "\nLast Name: ", lastName)
       const checkMobileNum = isValidMobileNumber();
       if(checkMobileNum){
         isProceed(true);
@@ -82,6 +82,8 @@ function Form() {
         setError(true)
       }
       
+    }else{
+      isProceed(false)
     }
   }
   return (
@@ -113,11 +115,11 @@ function Form() {
           {error && (number.length  <= 0 && number.length > 10 ) ?
             <label className='text-danger'>Contact number should be 10 digits</label> : ""}</div>
             <div className="mb-3 mx-5 mt-2">
-          <label for="fname" className="form-label">RC No<span className='text-danger'>*</span></label>
+          <label for="fname" className="form-label">Registration Certifacte Number<span className='text-danger'>*</span></label>
 
           <input placeholder="RC no" className='form-control' onBlur={checkSubmitButtom} onChange={e => setRcno(e.target.value)} />
           {error && rcno.length <= 0 ?
-            <label className='text-danger'>RC NO can't be Empty</label> : ""}</div>
+            <label className='text-danger'>Registration Certifacte Number can't be Empty</label> : ""}</div>
         <div>
           {<div className='d-flex justify-content-center'><button className={ (proceed && error) ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
             <Link className="nav-link text-light" to="/pricing">Submit</Link>
