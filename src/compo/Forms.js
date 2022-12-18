@@ -104,7 +104,7 @@ function Form() {
             <div className="mb-3 mx-5 mt-2">
           <label for="email" className="form-label">Email<span className='text-danger'>*</span></label>
           <input placeholder="Email" type="email" className='form-control' onBlur={checkSubmitButtom} onChange={e => setEmail(e.target.value)} />
-          {error && email.length <= 10 ?
+          {error && email.length <= 0 ?
             <label className='text-danger'>Email can't be Empty</label> : ""}</div>
 
             <div className="mb-3 mx-5 mt-2">
@@ -119,7 +119,7 @@ function Form() {
           {error && rcno.length <= 0 ?
             <label className='text-danger'>RC NO can't be Empty</label> : ""}</div>
         <div>
-          {<div className='d-flex justify-content-center'><button className={proceed ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
+          {<div className='d-flex justify-content-center'><button className={ (proceed && error) ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
             <Link className="nav-link text-light" to="/pricing">Submit</Link>
           </button></div>}
         </div>
