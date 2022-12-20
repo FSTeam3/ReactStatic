@@ -22,7 +22,7 @@ const Pricing = () => {
             <ul class="list-unstyled mt-3 mb-4">
               <li>Terms & Conditions Apply</li>
             </ul>
-            <button type="button" class="w-100 btn btn-lg btn-outline-primary" onClick={() => toast('Thank You For Your Interest, We Will Get Back To you!', {
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary" onClick={() => toast('Thank you for showing your interest with us, we will reach out to you with best policy plans shortly', {
         position: toast.POSITION.TOP_CENTER
       })}>{data.btn}</button><ToastContainer />
           </div>

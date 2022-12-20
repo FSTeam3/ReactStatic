@@ -112,7 +112,7 @@ function Form() {
             <div className="mb-3 mx-5 mt-2">
           <label for="fname" className="form-label">Contact No<span className='text-danger'>*</span></label>
           <input placeholder="Contact Number" className='form-control' onBlur={checkSubmitButtom}  onChange={e => setNumber(e.target.value)} />
-          {error && (number.length  <= 0 && number.length > 10 ) ?
+          {error && (number.length  <= 0) ?
             <label className='text-danger'>Contact number should be 10 digits</label> : ""}</div>
             <div className="mb-3 mx-5 mt-2">
           <label for="fname" className="form-label">Registration Certifacte Number<span className='text-danger'>*</span></label>
@@ -121,7 +121,7 @@ function Form() {
           {error && rcno.length <= 0 ?
             <label className='text-danger'>Registration Certifacte Number can't be Empty</label> : ""}</div>
         <div>
-          {<div className='d-flex justify-content-center'><button className={ (proceed && error) ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
+          {<div className='d-flex justify-content-center'><button className={ error ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
             <Link className="nav-link text-light" to="/pricing">Submit</Link>
           </button></div>}
         </div>

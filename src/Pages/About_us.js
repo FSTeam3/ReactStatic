@@ -8,7 +8,7 @@ const About_us = () => {
         <h1 className="fw-light">Autowa.</h1>
         <h3>We Work For You Not
 The Insurance Companies</h3>
-        <p className="lead text-muted">A 100% subsidiary of India’s fastest growing bank, Kotak Mahindra Bank Ltd., Kotak General Insurance was established to service the growing non-life insurance segment in India. At Kotak Mahindra General Insurance, we value customer service, quality, and innovation above everything else. Servicing the continuously growing non-life insurance sector, Kotak General Insurance is focused on bringing you quality products coupled with great customer service.</p>
+        <p className="lead text-muted">Car insurance provides financial protection to policyholders against accidents, theft, total loss, natural calamities, man-made disasters, fire, and third-party death or property damage. A car insurance policy is mandatory in India for all four-wheelers as per the Motor Vehicles Act, of 1988.</p>
         <p>
           {/* <a href="#" className="btn btn-primary my-2">Contact Us</a> */}
           <h5>+1 2345 67890</h5>
