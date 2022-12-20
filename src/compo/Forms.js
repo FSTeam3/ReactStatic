@@ -88,7 +88,7 @@ function Form() {
   }
   return (
     <>
-      <form onSubmit={handleSubmit} className='col-md-8 mx-auto mt-2 border border-round'>
+      <form onSubmit={handleSubmit} className='col-md-8 mx-auto mt-2 border rounded border-dark'>
         <div className="mb-3 mx-5 mt-2">
           <label for="fname" className="form-label">First Name <span className='text-danger'>*</span></label>
           <input placeholder="First Name" className='form-control' onBlur={checkSubmitButtom} on onChange={e => setFirstName(e.target.value)} />
@@ -97,30 +97,32 @@ function Form() {
 
 
         <div className="mb-3 mx-5 mt-2">
-          <label for="lname" className="form-label">Last Name<span className='text-danger'>*</span></label>
+          <label for="lname" className="form-label">Last Name <span className='text-danger'>*</span></label>
           <input placeholder="Last Name" className='form-control' onBlur={checkSubmitButtom} onChange={e => setLastName(e.target.value)} />
           {error && lastName.length <= 0 ?
             <label className='text-danger'>Last Name can't be Empty</label> : ""}</div>
 
 
             <div className="mb-3 mx-5 mt-2">
-          <label for="email" className="form-label">Email<span className='text-danger'>*</span></label>
+          <label for="email" className="form-label">Email <span className='text-danger'>*</span></label>
           <input placeholder="Email" type="email" className='form-control' onBlur={checkSubmitButtom} onChange={e => setEmail(e.target.value)} />
           {error && email.length <= 0 ?
             <label className='text-danger'>Email can't be Empty</label> : ""}</div>
 
             <div className="mb-3 mx-5 mt-2">
-          <label for="fname" className="form-label">Contact No<span className='text-danger'>*</span></label>
+          <label for="fname" className="form-label">Contact No <span className='text-danger'>*</span></label>
           <input placeholder="Contact Number" className='form-control' onBlur={checkSubmitButtom}  onChange={e => setNumber(e.target.value)} />
           {error && (number.length  <= 0) ?
             <label className='text-danger'>Contact number should be 10 digits</label> : ""}</div>
             <div className="mb-3 mx-5 mt-2">
-          <label for="fname" className="form-label">Registration Certifacte Number<span className='text-danger'>*</span></label>
+          <label for="fname" className="form-label">Registration Certifacte Number <span className='text-danger'>*</span></label>
 
           <input placeholder="RC no" className='form-control' onBlur={checkSubmitButtom} onChange={e => setRcno(e.target.value)} />
           {error && rcno.length <= 0 ?
             <label className='text-danger'>Registration Certifacte Number can't be Empty</label> : ""}</div>
         <div>
+        <span className='text-danger mb-3 mx-5 mt-2'>All Fields Are Mandatory</span>
+       <hr/>
           {<div className='d-flex justify-content-center'><button className={ error ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
             <Link className="nav-link text-light" to="/pricing">Submit</Link>
           </button></div>}
