@@ -72,15 +72,9 @@ function Form() {
     }
   }
   const checkSubmitButtom = () =>{
-    if (firstName.length>0 && lastName.length>0 && number && rcno.length>0 && email.length>0) {
-      console.log("First Name: ", firstName, "\nLast Name: ", lastName)
-      const checkMobileNum = isValidMobileNumber();
-      if(checkMobileNum){
-        isProceed(true);
-      }else{
-        isProceed(false);
-        setError(true)
-      }
+    if (firstName.length>0 && lastName.length>0 && number.length>0 && rcno.length>0 && email.length>0) {
+      // console.log("First Name: ", firstName, "\nLast Name: ", lastName)
+    isProceed(true)
       
     }else{
       isProceed(false)
@@ -123,7 +117,7 @@ function Form() {
         <div>
         <span className='text-danger mb-3 mx-5 mt-2'>All Fields Are Mandatory</span>
        <hr/>
-          {<div className='d-flex justify-content-center'><button className={ error ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
+          {<div className='d-flex justify-content-center'><button className={ (!error && proceed )? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
             <Link className="nav-link text-light" to="/pricing">Submit</Link>
           </button></div>}
         </div>
