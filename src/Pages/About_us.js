@@ -1,6 +1,11 @@
 import React from 'react'
 
 const About_us = () => {
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  
   return (
     <div> <section className='py-1 text-center container'>
     <div className="row py-lg-5">

@@ -29,9 +29,9 @@ function Header() {
         <li className="nav-item">
           <Link className="nav-link text-light" to="/about_us">About Us</Link>
         </li>
-        <li className="nav-item">
+        {/* <li className="nav-item">
           <Link className="nav-link text-light" to="/pricing">Pricing</Link>
-        </li>
+        </li> */}
         {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Vehicle Category

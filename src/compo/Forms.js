@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Outlet, Link } from "react-router-dom";
+import { useEffect } from 'react'
 // const Forms = () => {
 //   return (
 //   <div></div>
@@ -52,6 +53,11 @@ function Form() {
   const [error, setError] = useState(false)
   const [proceed, isProceed] = useState(false);
 
+
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (firstName.length == 0 || lastName.length == 0) {
@@ -65,29 +71,34 @@ function Form() {
   }
 
   const isValidMobileNumber = (e) => {
-    if(number.length == 10 ){
+    if (number.length == 10) {
       return true;
-    }else{
+    } else {
       return false;
     }
   }
-  const checkSubmitButtom = () =>{
-    if (firstName.length>0 && lastName.length>0 && number.length>0 && rcno.length>0 && email.length>0) {
+  const checkSubmitButtom = () => {
+    if (firstName.length > 0 && lastName.length > 0 && number.length > 0 && rcno.length > 0 && email.length > 0) {
       // console.log("First Name: ", firstName, "\nLast Name: ", lastName)
-    isProceed(true)
-      
-    }else{
+      isProceed(true)
+
+    } else {
       isProceed(false)
     }
   }
   return (
     <>
-      <form onSubmit={handleSubmit} className='col-md-8 mx-auto mt-2 border rounded border-dark'>
+    
+      <form onSubmit={handleSubmit} className='col-md-8 mx-auto mt-2 border rounded border-dark mx-2'>
+      <div class="alert alert-warning alert-dismissible fade show mt-2" role="alert">
+        <strong>Submit Button!</strong> Clickable After filing all Form
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
         <div className="mb-3 mx-5 mt-2">
           <label for="fname" className="form-label">First Name <span className='text-danger'>*</span></label>
           <input placeholder="First Name" className='form-control' onBlur={checkSubmitButtom} on onChange={e => setFirstName(e.target.value)} />
           {error && firstName.length <= 0 ?
-            <label  className='text-danger'>First Name can't be Empty</label> : ""}</div>
+            <label className='text-danger'>First Name can't be Empty</label> : ""}</div>
 
 
         <div className="mb-3 mx-5 mt-2">
@@ -97,27 +108,27 @@ function Form() {
             <label className='text-danger'>Last Name can't be Empty</label> : ""}</div>
 
 
-            <div className="mb-3 mx-5 mt-2">
+        <div className="mb-3 mx-5 mt-2">
           <label for="email" className="form-label">Email <span className='text-danger'>*</span></label>
           <input placeholder="Email" type="email" className='form-control' onBlur={checkSubmitButtom} onChange={e => setEmail(e.target.value)} />
           {error && email.length <= 0 ?
             <label className='text-danger'>Email can't be Empty</label> : ""}</div>
 
-            <div className="mb-3 mx-5 mt-2">
+        <div className="mb-3 mx-5 mt-2">
           <label for="fname" className="form-label">Contact No <span className='text-danger'>*</span></label>
-          <input placeholder="Contact Number" className='form-control' onBlur={checkSubmitButtom}  onChange={e => setNumber(e.target.value)} />
-          {error && (number.length  <= 0) ?
+          <input placeholder="Contact Number" className='form-control' onBlur={checkSubmitButtom} onChange={e => setNumber(e.target.value)} />
+          {error && (number.length <= 0) ?
             <label className='text-danger'>Contact number should be 10 digits</label> : ""}</div>
-            <div className="mb-3 mx-5 mt-2">
+        <div className="mb-3 mx-5 mt-2">
           <label for="fname" className="form-label">Registration Certifacte Number <span className='text-danger'>*</span></label>
 
           <input placeholder="RC no" className='form-control' onBlur={checkSubmitButtom} onChange={e => setRcno(e.target.value)} />
           {error && rcno.length <= 0 ?
             <label className='text-danger'>Registration Certifacte Number can't be Empty</label> : ""}</div>
         <div>
-        <span className='text-danger mb-3 mx-5 mt-2'>All Fields Are Mandatory</span>
-       <hr/>
-          {<div className='d-flex justify-content-center'><button className={ (!error && proceed )? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{'marginLeft':'auto'}} >
+          <span className='text-danger mb-3 mx-5 mt-2'>All Fields Are Mandatory</span>
+          <hr />
+          {<div className='d-flex justify-content-center'><button className={(!error && proceed) ? 'btn btn-primary mx-5 mb-3 w-50' : 'btn btn-primary mx-5 mb-3 disabled w-25'} style={{ 'marginLeft': 'auto' }} >
             <Link className="nav-link text-light" to="/pricing">Submit</Link>
           </button></div>}
         </div>

@@ -10,7 +10,7 @@ const Sections = () => {
         <p className="lead text-muted">
         When you buy insurance from us, you get more than just financial safety. You also get: our promise of simplifying complex insurance terms and conditions, quick stress-free claims, instant quotes from top insurers and being present for you in the toughest of times.</p>
         <p>
-          <a href="#" className="btn btn-primary my-2 mx-2 text-light"><Link className="text-light" to="/About_us">Contact Us</Link></a>
+          <a href="/About_us" className="btn btn-primary mt-2 mx-2 text-light"><Link className="text-light" to="/About_us">Contact Us</Link></a>
         </p>
       </div>
     </div>
